@@ -6,5 +6,10 @@ const isProd = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   plugins: [react()],
-  base: isProd ? "/dishdelights/" : "/", 
+  base: isProd ? "/dishdelights/" : "/",
+  build: {
+    outDir: 'docs',
+  },
+
 });
+
